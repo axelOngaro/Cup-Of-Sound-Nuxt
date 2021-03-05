@@ -16,6 +16,11 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  background-color: #efeee7;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
 li {
@@ -27,5 +32,14 @@ li {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.home-enter-active,
+.home-leave-active {
+  transition: opacity 0.5s;
+}
+.home-enter,
+.home-leave-active {
+  opacity: 0;
 }
 </style>

@@ -29,11 +29,12 @@ div {
   align-items: center;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 10rem;
+  margin-bottom: 4vh;
 }
 p {
   width: 50%;
   padding: 5vh 0;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 </style>

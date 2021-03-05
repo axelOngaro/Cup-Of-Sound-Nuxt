@@ -1,37 +1,66 @@
 <template>
-  <div>
+  <div class="home-page">
+    <h1>From thoughts</h1>
+    <h1>to sound</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, sapiente
-      reiciendis. Qui cum saepe nulla quibusdam molestias excepturi fugit nemo
-      necessitatibus maiores sunt quidem nobis asperiores enim dolorum delectus
-      voluptatibus distinctio, itaque provident, explicabo optio facere culpa
-      tenetur quaerat blanditiis? Nam ullam necessitatibus voluptate fugit
-      architecto odit sit, possimus velit.
+      Studio d'enregistrement, mixage et mastering, <br />à Toulouse, France.
     </p>
+    <button>
+      <nuxt-link class="nuxt-link" id="contactLink" to="contact"
+        >me contacter
+      </nuxt-link>
+    </button>
   </div>
 </template>
 
 <script>
-import Header from '../components/Header'
 export default {
-  components: {
-    Header,
-  },
+  components: {},
   transition: 'home',
 }
 </script>
 
-<style>
-div {
-  background-color: #efeee7;
+<style scoped>
+.home-page {
+  min-height: 100vh;
+  padding-top: 20vh;
+}
+h1,
+p {
+  margin-left: 8%;
 }
 
-.home-enter-active,
-.home-leave-active {
-  transition: opacity 0.5s;
+p {
+  font-size: 4rem;
+  margin-top: 8vh;
 }
-.home-enter,
-.home-leave-active {
-  opacity: 0;
+
+h1 {
+  line-height: 100%;
+  font-weight: 400;
+  font-size: 15rem;
+}
+button {
+  margin-left: 20%;
+  margin-top: 5vh;
+  height: 100px;
+  width: 400px;
+  border: none;
+
+  background-color: black;
+  font-family: 'Jost';
+  font-size: 3rem;
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+button:hover {
+  transition: 0.5s ease-in;
+  transform: translate(-10px, -10px);
+  box-shadow: grey 10px 10px 15px;
+}
+
+.nuxt-link {
+  color: white;
 }
 </style>
