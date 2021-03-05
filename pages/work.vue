@@ -61,7 +61,17 @@
       </section>
       <section class="see-more">
         <p>Pour voir mes autres projets, reprises, mixs...</p>
-        <p>direction Youtube, ou Soundcloud!</p>
+        <p>
+          direction
+          <a
+            href="https://www.youtube.com/channel/UC0Y_dTPUAt9BrusvmsSrvWg/featured"
+            target="_blank"
+            >Youtube</a
+          >, ou
+          <a href="https://soundcloud.com/user-905879753" target="_blank"
+            >Soundcloud</a
+          >!
+        </p>
       </section>
     </div>
   </div>
@@ -118,5 +128,15 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+a {
+  border-radius: 25px;
+  padding: 0 10px;
+}
+a:hover {
+  transition: ease-in 0.8s;
+  transform: translate(5px, 5px);
+  background-color: brown;
+  color: white;
 }
 </style>
