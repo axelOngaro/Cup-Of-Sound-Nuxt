@@ -1,78 +1,68 @@
 <template>
   <div>
-    <div class="workIntro">
+    <div class="work-intro">
       <h1>Mon travail</h1>
       <p>Quelques projets sélectionnés pour vous faire une idée...</p>
     </div>
-    <div id="work-page" class="work">
-      <div class="projet1 projet">
-        <h3>Projet1.</h3>
-        <div class="projet-content">
-          <div class="embedVideo">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/-qrYeWAMjvI"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-
+    <div class="work-page">
+      <section class="project project--1">
+        <div class="embed-video"></div>
+        <div class="project-text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad
-            veritatis beatae suscipit nisi ratione consectetur similique unde,
-            laudantium iusto?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aut,
+            fugiat impedit ut nisi nam rem libero laudantium, eius distinctio
+            dolorem sit reprehenderit iure magni eaque at fuga consequuntur
+            error dolore incidunt. Ab illo rem repellat voluptas, inventore
+            iste. Eaque, necessitatibus maiores laudantium perspiciatis tempora
+            esse, cum quidem nihil voluptate ipsum est inventore. Ab debitis
+            maxime ratione omnis labore voluptates at deserunt quidem dolorum
+            sint quae, quam adipisci doloribus quia natus voluptatum harum hic
+            vitae quis cum iure eligendi aspernatur eum qui. Quis atque
+            perspiciatis illo minima sunt, magni facere beatae? Explicabo nulla
+            placeat, aliquam a vitae quibusdam sapiente? Placeat.
           </p>
         </div>
-      </div>
-      <div class="projet2 projet">
-        <h3>Projet2.</h3>
-        <div class="projet-content">
+      </section>
+      <section class="project project--2">
+        <div class="project-text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad
-            veritatis beatae suscipit nisi ratione consectetur similique unde,
-            laudantium iusto?
-          </p>
-          <div>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/MWZam4jJrJg"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-      <div class="projet3 projet">
-        <h3>Projet3.</h3>
-        <div class="projet-content">
-          <img src="#" alt="" />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad
-            veritatis beatae suscipit nisi ratione consectetur similique unde,
-            laudantium iusto?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aut,
+            fugiat impedit ut nisi nam rem libero laudantium, eius distinctio
+            dolorem sit reprehenderit iure magni eaque at fuga consequuntur
+            error dolore incidunt. Ab illo rem repellat voluptas, inventore
+            iste. Eaque, necessitatibus maiores laudantium perspiciatis tempora
+            esse, cum quidem nihil voluptate ipsum est inventore. Ab debitis
+            maxime ratione omnis labore voluptates at deserunt quidem dolorum
+            sint quae, quam adipisci doloribus quia natus voluptatum harum hic
+            vitae quis cum iure eligendi aspernatur eum qui. Quis atque
+            perspiciatis illo minima sunt, magni facere beatae? Explicabo nulla
+            placeat, aliquam a vitae quibusdam sapiente? Placeat.
           </p>
         </div>
-      </div>
-      <p id="voirplus">
-        Pour voir le reste de mes travaux, direction
-        <a
-          href="https://soundcloud.com/user-905879753"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Soundcloud</a
-        >
-        et
-        <a
-          href="https://www.youtube.com/channel/UC0Y_dTPUAt9BrusvmsSrvWg"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Youtube</a
-        >!
-      </p>
+        <div class="embed-video"></div>
+      </section>
+      <section class="project project--3">
+        <div class="embed-video"></div>
+        <div class="project-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aut,
+            fugiat impedit ut nisi nam rem libero laudantium, eius distinctio
+            dolorem sit reprehenderit iure magni eaque at fuga consequuntur
+            error dolore incidunt. Ab illo rem repellat voluptas, inventore
+            iste. Eaque, necessitatibus maiores laudantium perspiciatis tempora
+            esse, cum quidem nihil voluptate ipsum est inventore. Ab debitis
+            maxime ratione omnis labore voluptates at deserunt quidem dolorum
+            sint quae, quam adipisci doloribus quia natus voluptatum harum hic
+            vitae quis cum iure eligendi aspernatur eum qui. Quis atque
+            perspiciatis illo minima sunt, magni facere beatae? Explicabo nulla
+            placeat, aliquam a vitae quibusdam sapiente? Placeat.
+          </p>
+        </div>
+      </section>
+      <section class="see-more">
+        <p>Pour voir mes autres projets, reprises, mixs...</p>
+        <p>direction Youtube, ou Soundcloud!</p>
+      </section>
     </div>
   </div>
 </template>
@@ -87,7 +77,7 @@ h1 {
   font-size: 10rem;
   font-weight: 700;
 }
-.workIntro {
+.work-intro {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -96,42 +86,37 @@ h1 {
   background-color: brown;
   color: white;
 }
-.workIntro p {
+.work-intro p {
   margin-top: 8%;
   font-size: 3rem;
 }
-.work {
-  width: 100%;
+
+.project {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  padding: 0 10%;
-  padding-top: 8%;
-}
-.projet-content {
-  display: flex;
-  height: 100%;
 }
 
-.projet-content p {
-  width: 50%;
-}
-.projet-content div {
+.project-text {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.embedVideo {
-  height: 100%;
-}
-.projet {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.project-text p {
+  width: 60%;
+  font-size: 2.5rem;
 }
 
-.projet h3 {
-  font-size: 3rem;
-  font-weight: bold;
+.embed-video {
+  width: 50%;
+  background-color: darkblue;
+}
+.see-more {
+  min-height: 50vh;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 </style>

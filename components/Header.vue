@@ -39,6 +39,7 @@ export default {
   min-height: 10vh;
   position: fixed;
   z-index: 1;
+  font-size: 2rem;
 }
 h1 {
   cursor: pointer;
@@ -47,7 +48,7 @@ p {
   cursor: pointer;
 }
 ul {
-  width: 500px;
+  width: 30vw;
   display: flex;
   justify-content: space-evenly;
 }
