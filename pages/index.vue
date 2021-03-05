@@ -1,73 +1,35 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        CupOfSound
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+  <div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, sapiente
+      reiciendis. Qui cum saepe nulla quibusdam molestias excepturi fugit nemo
+      necessitatibus maiores sunt quidem nobis asperiores enim dolorum delectus
+      voluptatibus distinctio, itaque provident, explicabo optio facere culpa
+      tenetur quaerat blanditiis? Nam ullam necessitatibus voluptate fugit
+      architecto odit sit, possimus velit.
+    </p>
   </div>
 </template>
 
 <script>
-export default {}
+import Header from '../components/Header'
+export default {
+  components: 'Header',
+  transition: 'home',
+}
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+div {
+  background-color: #efeee7;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.home-enter-active,
+.home-leave-active {
+  transition: opacity 0.5s;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.home-enter,
+.home-leave-active {
+  opacity: 0;
 }
 </style>
