@@ -118,8 +118,8 @@ iframe {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: brown;
-  color: white;
+  background-color: #ffa836;
+  color: black;
 }
 .work-intro p {
   margin-top: 8%;

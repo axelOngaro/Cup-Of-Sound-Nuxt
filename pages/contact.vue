@@ -1,10 +1,10 @@
 <template>
   <div class="contact">
     <div class="contact-text">
-      <h2>Contact.</h2>
+      <h2>Contact</h2>
 
       <p>
-        N’hésites pas à me contacter pour plus de renseignement, ou simplement
+        N’hésite pas à me contacter pour plus de renseignement, ou simplement
         passer un bonjour!
       </p>
     </div>
