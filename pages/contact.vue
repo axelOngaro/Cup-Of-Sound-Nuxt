@@ -4,14 +4,14 @@
       <h2>Contact.</h2>
 
       <p>
-        N’hésite pas à me contacter pour plus de renseignement, ou simplement
+        N’hésites pas à me contacter pour plus de renseignement, ou simplement
         passer un bonjour!
       </p>
     </div>
     <div class="contact-content">
       <p>Via mes réseaux:</p>
       <ul>
-        <li><a href="">Facebook</a></li>
+        <li><a href="#">Facebook</a></li>
         <li><a href="#">Instagram</a></li>
         <li><a href="#">Soundcloud</a></li>
         <li><a href="#">Youtube</a></li>
@@ -55,7 +55,7 @@ export default {
   font-size: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 15%;
 }
 
 .contact-content p {

@@ -6,7 +6,14 @@
     </div>
     <div class="work-page">
       <section class="project project--1">
-        <div class="embed-video"></div>
+        <div class="embed-video">
+          <iframe
+            src="https://www.youtube.com/embed/-qrYeWAMjvI"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div class="project-text">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aut,
@@ -39,10 +46,24 @@
             placeat, aliquam a vitae quibusdam sapiente? Placeat.
           </p>
         </div>
-        <div class="embed-video"></div>
+        <div class="embed-video">
+          <iframe
+            src="https://www.youtube.com/embed/MWZam4jJrJg"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
       <section class="project project--3">
-        <div class="embed-video"></div>
+        <div class="embed-video">
+          <iframe
+            src="https://www.youtube.com/embed/-4N4M45Zdck"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
         <div class="project-text">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto aut,
@@ -87,6 +108,10 @@ h1 {
   font-size: 10rem;
   font-weight: 700;
 }
+iframe {
+  width: 80%;
+  height: 50%;
+}
 .work-intro {
   min-height: 100vh;
   display: flex;
@@ -119,7 +144,12 @@ h1 {
 
 .embed-video {
   width: 50%;
-  background-color: darkblue;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.project--2 .embed-video {
+  justify-content: flex-start;
 }
 .see-more {
   min-height: 50vh;
