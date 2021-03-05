@@ -1,18 +1,24 @@
 <template>
   <div>
+    <div class="workIntro">
+      <h1>Mon travail</h1>
+      <p>Quelques projets sélectionnés pour vous faire une idée...</p>
+    </div>
     <div id="work-page" class="work">
-      <h2>Mon travail.</h2>
-      <div class="projet1">
+      <div class="projet1 projet">
         <h3>Projet1.</h3>
         <div class="projet-content">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/-qrYeWAMjvI"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div class="embedVideo">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-qrYeWAMjvI"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad
             veritatis beatae suscipit nisi ratione consectetur similique unde,
@@ -20,7 +26,7 @@
           </p>
         </div>
       </div>
-      <div class="projet2">
+      <div class="projet2 projet">
         <h3>Projet2.</h3>
         <div class="projet-content">
           <p>
@@ -28,17 +34,19 @@
             veritatis beatae suscipit nisi ratione consectetur similique unde,
             laudantium iusto?
           </p>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/MWZam4jJrJg"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/MWZam4jJrJg"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
-      <div class="projet3">
+      <div class="projet3 projet">
         <h3>Projet3.</h3>
         <div class="projet-content">
           <img src="#" alt="" />
@@ -75,15 +83,55 @@ export default {
 }
 </script>
 <style scoped>
+h1 {
+  font-size: 10rem;
+  font-weight: 700;
+}
+.workIntro {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: brown;
+  color: white;
+}
+.workIntro p {
+  margin-top: 8%;
+  font-size: 3rem;
+}
 .work {
-  min-height: 200vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 0 10%;
-  padding-top: 10%;
+  padding-top: 8%;
 }
 .projet-content {
   display: flex;
+  height: 100%;
+}
+
+.projet-content p {
+  width: 50%;
+}
+.projet-content div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.embedVideo {
+  height: 100%;
+}
+.projet {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.projet h3 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 </style>
