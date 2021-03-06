@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'Almarena';
+  src: local('Almarena'),
+    url(~/assets/fonts/Almarena-Display-Regular.otf) format('opentype');
+}
