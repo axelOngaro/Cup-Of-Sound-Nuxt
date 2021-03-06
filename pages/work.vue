@@ -112,6 +112,7 @@ iframe {
   width: 80%;
   height: 50%;
 }
+
 .work-intro {
   min-height: 100vh;
   display: flex;

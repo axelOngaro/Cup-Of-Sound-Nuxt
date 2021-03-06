@@ -3,7 +3,6 @@
     <nuxt-link class="nuxt-link" id="contactLink" to="/"
       ><h1>Cup of sound studio</h1></nuxt-link
     >
-    <p id="toggleTheme">*</p>
     <nav>
       <ul>
         <li>
@@ -32,6 +31,9 @@ export default {
 }
 </script>
 <style scoped>
+::-webkit-scrollbar {
+  width: 0 !important;
+}
 .header {
   width: 100%;
   display: flex;

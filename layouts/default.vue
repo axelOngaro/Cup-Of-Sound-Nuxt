@@ -18,6 +18,20 @@ html {
   box-sizing: border-box;
   background-color: #efeee7;
 }
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: gray;
+}
 a {
   text-decoration: none;
   color: black;
