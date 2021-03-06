@@ -17,6 +17,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background-color: #efeee7;
+  overflow-y: scroll;
 }
 html::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -50,7 +51,7 @@ li {
 
 .home-enter-active,
 .home-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
 .home-enter,
 .home-leave-active {

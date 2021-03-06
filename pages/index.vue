@@ -39,6 +39,7 @@ h1 {
   line-height: 100%;
   font-weight: 400;
   font-size: 15rem;
+  font-family: 'Almarena';
 }
 button {
   margin-left: 20%;
