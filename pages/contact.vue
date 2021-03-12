@@ -11,14 +11,20 @@
     <div class="contact-content">
       <p>Via mes réseaux:</p>
       <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Soundcloud</a></li>
-        <li><a href="#">Youtube</a></li>
+        <li>
+          <a href="#" class="contact-link">Facebook</a>
+        </li>
+        <li>
+          <a href="#" class="contact-link">Instagram</a>
+        </li>
+        <li>
+          <a href="#" class="contact-link">Soundcloud</a>
+        </li>
+        <li><a href="#" class="contact-link">Youtube</a></li>
       </ul>
     </div>
     <p class="email">
-      Ou directement par email à: <a href="#">machin.truc@email.fr</a>
+      <a href="#" class="contact-link">machin.truc@email.fr</a>
     </p>
   </div>
 </template>
@@ -35,7 +41,7 @@ export default {
   flex-wrap: wrap;
   padding: 0 10%;
 
-  padding-top: 20vh;
+  padding-top: 10vh;
   justify-content: space-evenly;
 }
 .contact-text {
@@ -56,6 +62,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding-left: 15%;
+  margin-top: 10%;
 }
 
 .contact-content p {
@@ -67,5 +74,25 @@ export default {
 .email {
   font-size: 4rem;
   font-weight: bold;
+}
+.contact-link {
+  position: relative;
+}
+.contact-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+.contact-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 </style>

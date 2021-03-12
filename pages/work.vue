@@ -8,6 +8,7 @@
       <section class="project project--1">
         <div class="embed-video">
           <iframe
+            loading="lazy"
             src="https://www.youtube.com/embed/-qrYeWAMjvI"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -48,6 +49,7 @@
         </div>
         <div class="embed-video">
           <iframe
+            loading="lazy"
             src="https://www.youtube.com/embed/MWZam4jJrJg"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,6 +60,7 @@
       <section class="project project--3">
         <div class="embed-video">
           <iframe
+            loading="lazy"
             src="https://www.youtube.com/embed/-4N4M45Zdck"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
